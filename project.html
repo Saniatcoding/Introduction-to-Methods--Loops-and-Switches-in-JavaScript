@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+        background: image-set("https://media.istockphoto.com/id/522735736/photo/chocolate-background.jpg?s=612x612&w=0&k=20&c=fmBbjHi5zXpcbzAQWGy3xtPgcIJkc7eHXjZiYsi396A=");
+    }
+
+    h2{
+        color: rgb(255, 255, 255);
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: rgb(57, 44, 44);
+        justify-content: center;
+        display: flex;
+    }
+
+    p{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(57, 44, 44);
+        text-shadow: 2px 2px 4px #bb7171;
+    }
+
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(57, 44, 44);
+    }
+
+    
+  </style>
+  <body>
+    <h2>Javascript String Methods and Loops</h2>
+
+    <p>Numbers from 1 to 50 are:</p>
+    <p id="result"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 51; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate() + "<br>");
+      document.write("Current Month is " + date.getMonth() + "<br>");
+      document.write("Current Year is " + date.getYear() + "<br>");
+      document.write("Current Time is " + date.getTime() + "<br>");
+    </script>
+  </body>
+</html>
